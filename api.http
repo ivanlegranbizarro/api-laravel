@@ -7,6 +7,16 @@ Accept: application/json
   "precio": 1.5,
   "stock": 100
 }
+###
+GET http://127.0.0.1:8000/api/postres
+Content-Type: application/json
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/api/delete/postre/2
+Content-Type: application/json
+Accept: application/json
 
 ###
 
