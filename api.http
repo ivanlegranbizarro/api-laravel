@@ -1,0 +1,31 @@
+POST http://127.0.0.1:8000/api/crear-postre
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "Palmera de chocolate",
+  "precio": 1.5,
+  "stock": 100
+}
+
+###
+
+POST http://127.0.0.1:8000/api/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Iván",
+  "email": "ivan@ivan.com",
+  "password": "123456"
+}
+###
+
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "ivan@ivan.com",
+  "password": "123456"
+}
