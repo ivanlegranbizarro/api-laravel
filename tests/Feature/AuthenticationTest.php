@@ -6,12 +6,13 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Auth;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 class AuthenticationTest extends TestCase
 {
   use RefreshDatabase;
-  /** @test */
+  #[Test]
   public function test_user_can_be_registered(): void
   {
     $this->postJson('/api/register', [
@@ -21,7 +22,7 @@ class AuthenticationTest extends TestCase
     ])->assertSuccessful();
   }
 
-  /** @test */
+  #[Test]
   public function test_user_can_login(): void
   {
     $user = User::factory()->create();
